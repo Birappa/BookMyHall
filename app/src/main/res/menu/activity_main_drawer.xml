@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/nav_myHall"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="My Hall" />
+        <item
+            android:id="@+id/nav_myWallet"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/nav_myStories"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Stories" />
+    </group>
+
+    <item android:title="Book">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_conferenceHall"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Conference Hall" />
+
+            <item
+                android:id="@+id/nav_marriageHall"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Marriage Hall" />
+
+            <item
+                android:id="@+id/nav_partyHall"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Party Hall" />
+
+            <item
+                android:id="@+id/nav_garden"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Garden" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Extra">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Setting" />
+
+            <item
+                android:id="@+id/nav_rateus"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Rate Us" />
+
+            <item
+                android:id="@+id/nav_helpAndSupport"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Help and Support" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="About " />
+
+        </menu>
+
+    </item>
+
+
+</menu>
