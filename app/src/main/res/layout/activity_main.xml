@@ -6,7 +6,126 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    android:background="@drawable/img1"
+    tools:openDrawer="start"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    >
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card_View_Demo"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        cardview:cardCornerRadius="20dp"
+        cardview:cardBackgroundColor="#9FA8DA"
+        cardview:cardElevation="5dp"
+        android:layout_above="@+id/Card_View_Demo_2"
+
+        android:layout_alignLeft="@+id/Card_View_Demo_2"
+
+        android:layout_marginBottom="19dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Conference Hall"
+            android:textSize="29dp"
+            android:layout_marginTop="50dp"
+            android:minHeight="181dp"
+
+            android:textAlignment="center" />
+
+        >
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card_View_Demo_1"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        cardview:cardCornerRadius="20dp"
+        cardview:cardBackgroundColor="#FFF59D"
+
+        android:layout_toRightOf="@id/Card_View_Demo"
+        android:layout_alignTop="@+id/Card_View_Demo"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Marriage Hall"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:id="@+id/textView" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card_View_Demo_2"
+        android:layout_gravity="bottom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        cardview:cardCornerRadius="20dp"
+        cardview:cardBackgroundColor="@color/cl1"
+        android:layout_alignTop="@+id/Card_View_Demo_3"
+
+
+       android:layout_marginLeft="20dp"
+
+
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" Party Hall"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card_View_Demo_3"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="bottom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        cardview:cardCornerRadius="20dp"
+        cardview:cardBackgroundColor="#90CAF9"
+        android:layout_marginBottom="33dp"
+        android:background="#000"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Card_View_Demo_2"
+        android:layout_toRightOf="@+id/Card_View_Demo_2"
+        android:layout_marginStart="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="   Garden"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
 
     <include
         layout="@layout/app_bar_main"
